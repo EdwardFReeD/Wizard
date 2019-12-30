@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8"/>
+             <title>Авторизация</title>
+                  <style>
+
+                         body {
+                                 background: #2F4F4F;
+                                 outline:none;
+                                  width: 600px; /* Ширина элемента в пикселах */
+                                    padding: 10px; /* Поля вокруг текста */
+                                    margin: auto; /* Выравниваем по центру */
+                                    margin-top: 20%;
+                               }
+                         .center {
+                         outline:none;
+                                    width: 300px; /* Ширина элемента в пикселах */
+                                    padding: 10px; /* Поля вокруг текста */
+                                    margin: auto; /* Выравниваем по центру */
+                                    color:white;
+
+                                 }
+                        .inp {
+                              background-color: #2F4F4F; /*Цвет текстового поля*/
+                              border-radius: 10px 10px 10px 10px; /*Закругляем уголки*/
+                              width: 290px;
+                                                      font-size: 100%;
+                                                      color:white;
+                              font-family: Verdana, Arial, Helvetica, sans-serif;
+                              padding-left: 10px;
+                              outline:none;
+
+                             }
+
+                         .btn {
+                         margin-top: 4%;
+                         width: 100px;
+                         border-radius: 5px 5px 5px 5px; /*Закругляем уголки*/
+                         background-color: #2F4F4F;
+
+                        font-size: 100%;
+                        font-family: Verdana, Arial, Helvetica, sans-serif;
+                        color:White;
+                        outline:none;
+                         align-content: : center;
+                         }
+                         .txt {
+                         font-size: 100%;
+                        font-family: Verdana, Arial, Helvetica, sans-serif;
+                        color:White;
+                        outline:none;
+                         margin: auto;
+                          margin-top: 2%;
+                         }
+
+                  </style>
+     </head>
+ <body>
+     <div name = "login" class="center">
+         <form method="post" action="/login/">
+             <table>
+                   <tr>
+                         <td><label for="loginField" class="txt">Логин</label></td>
+
+                   </tr>
+                 <tr>
+                     <td><input id="loginField" type="text" name="login" class="inp"></td>
+                 </tr>
+
+                   <tr>
+                         <td><label for="passwordField" class="txt">Пароль</label></td>
+
+                   </tr>
+                 <tr>
+                     <td><input id="passwordField" type="password" name="password" class="inp"></td>
+                 </tr>
+                   <tr>
+                         <td colspan="2" style="text-align: right"><input type="submit" value="Войти" class="btn" ></td>
+                   </tr>
+
+             </table>
+        </form>
+     </div>
+ </body>
+</html>
